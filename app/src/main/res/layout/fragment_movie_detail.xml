@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.techlad.swvlchallenge.ui.detail.PhotosAdapter" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/detailHeader"
+            layout="@layout/item_movie" />
+
+        <TextView
+            android:background="@color/dark_bg"
+            android:text="@string/related_gallery"
+            android:padding="@dimen/fab_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include android:visibility="gone" android:id="@+id/noRecordLl" layout="@layout/no_record_available_ll" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchResultRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:adapter="@{adapter}"
+                android:clipToPadding="false"
+                android:padding="@dimen/fab_margin"
+                tools:listitem="@layout/item_movie" />
+
+
+            <ProgressBar
+                android:id="@+id/searchProgBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

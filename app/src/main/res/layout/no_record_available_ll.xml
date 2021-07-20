@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UseCompoundDrawables"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:src="@mipmap/ic_empty"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/empty_response_image" />
+
+    <TextView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:text="@string/no_record_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

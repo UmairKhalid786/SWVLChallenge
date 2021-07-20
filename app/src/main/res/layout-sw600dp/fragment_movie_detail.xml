@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.techlad.swvlchallenge.ui.detail.PhotosAdapter" />
+
+        <variable
+            name="movie"
+            type="com.techlad.swvlchallenge.data.responses.MoviesResponse.Data.Movie" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/item_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/detailHeader"
+            layout="@layout/item_movie" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
