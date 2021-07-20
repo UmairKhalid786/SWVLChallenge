@@ -45,6 +45,11 @@ Tests
 ---------------
 I wrote both Android Tests and Unit tests 
 
+
+Extras
+---------------
+Day/Night color support
+
 [changelog-badge]: https://img.shields.io/badge/SWVL%20Challenge%20v1.0.0-%23E05735
 [license]: ./LICENSE
 [rbenv]: https://github.com/rbenv/rbenv
